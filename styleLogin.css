@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif
+}
+
+body {
+    background-image: url('./images/imagem-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    opacity: 0.8;
+}
+
+#tela-login{
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    position: relative;
+}
+
+#tela-logado {
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    position: relative;
+}
+
+#tela-login h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+#tela-logado h2{
+    text-align: center;
+    padding: 20px;
+}
+
+#tela-login #msgError {
+    position: absolute;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    transform: translateX(-85%);
+    color: rgb(235, 43, 43);
+    font-weight: bold;
+    display: none;
+}
+
+#tela-login input {
+    border: none;
+    border-bottom: 2px solid black;
+    background: none;
+    padding:10px;
+    margin: 10px auto;
+    width: 90%;
+    display: block;
+}
+
+#tela-login input:focus {
+    outline: none;
+}
+
+#tela-login #icone-senha {
+    position: absolute;
+    top: 140px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#tela-login .btn{
+    border: 2px solid black;
+    width: 20%;
+    margin: 25px auto;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+#tela-login .btn:hover {
+    background-color: gray;
+    color: white;
+    transition: 2s;
+}
+
+#tela-logado .btn {
+    position: relative;
+    border: 2px solid black;
+    padding: 10px;
+    width: 20%;
+    left: 50%;
+    top: 90px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tela-logado .btn:hover {
+    background-color: gray;
+    color: white;
+    transition: 2s;
+}
+
+#tela-login #linha-lateral {
+    width: 50%;
+    border: 1px solid rgb(194, 190, 190);
+    margin: 0 auto;
+}
+
+#tela-login p {
+    text-align: center;
+    padding: 35px;
+    font-size: 14px;
+}
+
+#tela-login p a {
+    text-decoration: none;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar conta</title>
+    <link rel="stylesheet" href="styleCadastro.css">
+</head>
+<body>
+    
+    <div id="container">
+        <div id="tela-cadastro">
+            <h1>Cadastrar</h1>
+
+            <a href="index.html">
+                <img class="voltar" src="https://img.icons8.com/material-outlined/24/000000/left.png"/>
+            </a>
+
+            <div id="msgError"></div>
+            <div id="msgSuccess"></div>
+
+            <label id="labelNome"></label>
+            <input id="nome" type="text" placeholder="Nome" required>
+            <label id="labelUsuario"></label>
+            <input id="usuario" type="text" placeholder="Usuário" required>
+            <label id="labelSenha"></label>
+            <input id="senha" class="senha" type="password" placeholder="Senha" required>
+            <img id="icone-senha" class="icone-senha" src="https://img.icons8.com/material-outlined/24/000000/visible--v1.png"/>
+            <label id="labelConfirmarSenha"></label>
+            <input id="confirmar-senha" class="senha" type="password" placeholder="Confirmar Senha" required>
+            <img id="icone-confirmar-senha" class="icone-senha" src="https://img.icons8.com/material-outlined/24/000000/visible--v1.png"/>
+            <input onclick="register()" id="btn" value="Cadastrar" type="submit">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
